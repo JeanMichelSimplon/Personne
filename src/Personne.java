@@ -43,6 +43,19 @@ public class Personne{
 		this.sexe = false;
 	}
 
+	
+	public void declineTonIdentite() {
+		// TODO afficher dans la console à minima le nom et le prénom
+	}
+	
+	public void feteTonAnniversaire() {
+		// TODO afficher dans la console "XXX YYY souffle ses Z bougies !" et augmenter l'âge de la personne
+	}
+	
+	public void demenage(Adresse nouvelleAdresse) {
+		// TODO prendre en compte le changement d'adresse
+	}
+	
 	@Override
 	public String toString() {
 		return "Personne [nom=" + nom + ", age=" + age + ", prenom=" + prenom
