@@ -1,5 +1,5 @@
 
-public class Personne {
+public class Personne{
 
 	private String nom;
 	private int age;
@@ -7,21 +7,21 @@ public class Personne {
 	public String adresse;
 	public boolean sexe;
 
-    
-
-
-	public Personne(String prenom, String nom, int age) {
+	public Personne(String prenom, String nom, int age, boolean sexe, String adresse) {
 		super();
 		this.prenom = prenom;		
 		this.nom = nom;
 		this.age = age;
-
+		this.sexe = sexe;
+//		this.adresse = adresse;
 	}
-	public void setadresse(String adresse) {
+/*	public void setadresse(String adresse) {
 		this.adresse = adresse;
 		
-	}
+	}*/
 		
+
+
 	public String getNom() {
 		return nom;
 	}
@@ -34,21 +34,19 @@ public class Personne {
 	public void setAge(int age) {
 		this.age = age;
 	}
+	public void setPrenom(String prenom) {
 
-	public void setPrenom(String string) {
-		// TODO Auto-generated method stub
-		
+		this.prenom = prenom;
 	}
 	public void setSexe(boolean b) {
-		// TODO Auto-generated method stub
-		
-	}
 
+		this.sexe = false;
+	}
 
 	@Override
 	public String toString() {
 		return "Personne [nom=" + nom + ", age=" + age + ", prenom=" + prenom
-				+ ", adresse=" + adresse + ", sexe=" + sexe + "]";
+				+ ", sexe=" + sexe + "]";
 	}
 
 
